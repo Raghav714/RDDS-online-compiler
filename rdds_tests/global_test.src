@@ -1,0 +1,32 @@
+// SCOPE TEST PROGRAM
+the program scope_test is
+define
+    global int my_global_int;
+    global int result;
+
+    global function increment_global() is
+    body
+        result = my_global_int + 1;
+    finish function;
+
+    function calls_increment_global() is
+    body
+        // See if we can call a global procedure from this scope
+        increment_global();
+    finish function;
+
+body
+    my_global_int = 9;
+    result = 0;
+
+    calls_increment_global();
+
+    if (result == 10) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+
+    return;
+
+finish program

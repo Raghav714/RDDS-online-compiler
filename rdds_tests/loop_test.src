@@ -1,0 +1,37 @@
+the program looptest is
+
+define
+    int result;
+    global int num_loops;
+
+    function do_loops(int result out) is
+        int counter;
+    body
+        counter = 0;
+
+        putstr("Number of Loops:");
+        putint(num_loops);
+
+        for (counter = counter + 1; counter <= num_loops)
+            putstr("Current Counter:");
+            putint(counter);
+            result = counter;
+        finish for;
+     finish function;
+
+body
+
+    result = 0;
+    num_loops = 10;
+
+    do_loops(result);
+
+    putstr("Expect 10");
+
+    if (result == 10) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+
+finish program

@@ -1,0 +1,55 @@
+the program test_program is
+
+define
+    int i;
+    global int one_int;
+    int two_int;
+    int red_int;
+    int blue_int;
+    int mult_of_two;
+    int test_array[15];
+
+    str test_string;
+
+    bool isGreaterThan;
+
+    function test_proc(int my_int in) is
+        str two_param;
+        int assigned_int;
+    body
+        two_param = "Hello, World 2";
+        assigned_int = my_int;
+
+        return;
+    finish function;
+
+body
+
+    test_string = "Hello, World 1";
+
+    one_int = 1;
+    two_int = 2;
+    red_int = 3 + 4.;
+    mult_of_two = 1;
+
+    test_proc(red_int);
+
+    // Test some expressions
+    blue_int = (((((one_int * two_int[one_int]) + red_int))));
+
+    isGreaterThan = false;
+
+    // Testing 'if' statements
+    if ((blue_int * 2) >= -1) then
+        isGreaterThan = true;
+    finish if;
+
+    // Testing 'for' statements
+    for (i = 0; i <= blue_int)
+        i = i + 1.;
+        mult_of_two = i * 2;
+    finish for;
+
+    return;
+
+finish program

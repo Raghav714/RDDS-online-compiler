@@ -1,0 +1,55 @@
+the program codegen_test is
+define
+    int testint;
+    str teststring;
+    bool testbool;
+    float testfloat;
+    function increment (int val in, int result out) is
+    body
+        result = val + 1;
+    finish function;
+
+body
+
+    ////////////////////////////////////////////
+    // INTEGER TEST
+
+    testint = 0;
+    increment(41, testint);
+
+    putstr("41 plus 1 is...");
+    putint(testint);
+
+    putstr("Enter an integer");
+    getint(testint);
+    putstr("You entered...");
+    putint(testint);
+
+    ////////////////////////////////////////////
+    // BOOL TEST
+
+    putstr("Enter a boolean value 0 or 1");
+    getbool(testbool);
+    putstr("You entered...");
+    putbool(testbool);
+
+    ////////////////////////////////////////////
+    // FLOAT TEST
+
+    testfloat = 4.5;
+    putfloat(testfloat);
+    putfloat(1414.1414);
+
+    putstr("Enter a float");
+    getfloat(testfloat);
+    putstr("You entered...");
+    putfloat(testfloat);
+
+    ////////////////////////////////////////////
+    // STRING TEST
+
+    putstr("Enter a string");
+    getstr(teststring);
+    putstr(teststring);
+
+finish program

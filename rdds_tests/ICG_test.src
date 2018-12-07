@@ -1,0 +1,73 @@
+the program codegen_test is
+
+define
+    int count;
+
+    int add1;
+    int add2;
+
+    float float1;
+    float float2;
+
+    float result1;
+
+    str hello;
+
+    int sum[2];
+    int result;
+
+    // Test a procedure declaration. Will be called later
+    function increment (int val in, int result out) is 
+        int tmp1;
+    body
+        tmp1 = 1;
+        result = tmp1 + val;
+    finish function;
+
+body
+
+    result = 0;
+    increment(4 + 7 + 3, result);
+
+    if (4 + 7 + 3 + 1 == result) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+
+    add1 = 1;
+    add2 = 5; 
+
+    float1 = 1.1;
+    float2 = 2.;
+
+    result1 = float1 + float2;
+    result1 = float1 * add1;
+    
+    sum[0] = 1 + 5;
+    sum[1] = add1 + add2;
+
+    if (sum[0] == sum[1]) then
+        result = 1;
+    else
+        result = 0;
+    finish if;
+
+    if (result == 1) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+
+    // Set 'count' to 10 the long way
+    count = 0;
+    for (count = count; count < 10)
+        count = count + 1;
+    finish for;
+
+    if (count == 10) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+finish program

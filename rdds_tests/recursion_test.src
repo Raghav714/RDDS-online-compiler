@@ -1,0 +1,28 @@
+the program recursiontest is
+define
+    int start_val;
+    global int end_val;
+
+    function count_to_ten(int current_val in) is
+    body
+        if (current_val < 10) then
+            count_to_ten(current_val + 1);
+        else
+            end_val = current_val;
+        finish if;
+    finish function;
+
+body
+
+    start_val = 1;
+    end_val = 0;
+
+    count_to_ten(start_val);
+
+    if (end_val == 10) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+
+finish program

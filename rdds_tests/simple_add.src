@@ -1,0 +1,26 @@
+the program simpleadd is
+
+define
+    int int1;
+    int int2;
+    int result;
+    int subtract;
+
+body
+
+    // Get the first input
+    putstr("Enter 1st Integer:");
+    getint(int1);
+
+    // Get the second input
+    putstr("Enter 2nd Integer:");
+    getint(int2);
+
+    // Calculate the sum
+    result = int1 + int2;
+	subtract = int1 - int2;
+    putstr("Result:");
+    putint(result);
+	//putint(subtract);
+
+finish program
