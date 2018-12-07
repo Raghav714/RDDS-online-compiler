@@ -1,0 +1,30 @@
+// SCOPE TEST PROGRAM
+the program scope_test is
+
+define
+    int add1;
+    int add2;
+    int sum;
+
+    function add(int add1 in, int add2 in, int sum out) is
+    body
+        sum = add1 + add2;
+    finish function;
+
+body
+
+    add1 = 1;
+    add2 = 5; 
+
+    add(add1, add2, sum);
+
+    if (sum == 6) then
+        putstr("SUCCESS");
+    else
+        putstr("FAILURE");
+    finish if;
+
+    return;
+
+finish program
+                
