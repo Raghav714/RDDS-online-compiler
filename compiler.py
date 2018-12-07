@@ -19,7 +19,7 @@ import sys
 import os
 
 # Import custom compiler libraries
-from lib.parser import Parser
+from lib.rd_parser import Parser
 
 
 def parse_arguments():
