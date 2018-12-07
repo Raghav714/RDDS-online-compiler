@@ -69,9 +69,9 @@ window.location.href="http://127.0.0.1/index1.php";
 }
 </script>
 </form>
-            <a href="https://github.com/" target="_blank"><button class="material-button orange"><span>View Github</span></button></a>
+            <a href="https://github.com/Raghav714/" target="_blank"><button class="material-button orange"><span>View Github</span></button></a>
 
-            <a href="" target="_blank"><button class="material-button orange"><span>Main Website</span></button></a>
+            <a href="https://sites.google.com/view/gauravkumarraghav" target="_blank"><button class="material-button orange"><span>Main Website</span></button></a>
             </div>
 
             <div id="right">
@@ -79,7 +79,7 @@ window.location.href="http://127.0.0.1/index1.php";
 echo "OUTPUT </br> ";
   if (isset($_POST['textarea']))
 {
-echo shell_exec("python3 /home/raghav/RDDS/code/compiler.py -o OUT test.src");
+echo shell_exec("python3 <path>compiler.py -o OUT test.src");
 echo shell_exec("./a.out < input.txt"); 
 }
     ?>
