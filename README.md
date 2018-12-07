@@ -104,3 +104,6 @@ $ `sudo apt install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-mbstring p
 Copy the HTML, PHP, CSS, input.txt and test.src file in /var/www/html/ and type the localhost/index1.php in browser.</br>
 Edit the Path of the file `compiler.py` in index1.php </br>
 if the program doesnot work then run $ `sudo chmod 777 *` in /var/www/html/ </br>
+if you wish to make RDDS as a command then open the bashrc file(sudo gedit ~/.bashrc) and write the command `alias RDDS ='python3 /home/raghav/Downloads/compiler/2compiler/compiler.py -o OUT'` in this you need to replace the path of compiler.py file.</br>
+use the command `RDDS rdds_test/simple_add.src` and `./a.out` to see the output
+`
