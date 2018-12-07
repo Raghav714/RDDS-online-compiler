@@ -94,9 +94,10 @@ fnish for<\br>
 ![compiler2](https://user-images.githubusercontent.com/29707542/49634708-8b242000-fa23-11e8-9363-0aef06a62514.png)
 
 ### STEPS to run the program
- `sudo apt update`</br>
-`sudo apt install apache2`</br>
-`sudo systemctl stop apache2.service` </br>
-`sudo systemctl start apache2.service` </br>
-`sudo systemctl enable apache2.service` </br>
-`sudo apt install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-mbstring php7.2-xmlrpc php7.2-soap php7.2-gd php7.2-xml php7.2-intl php7.2-mysql php7.2-cli php7.2-zip php7.2-curl`</br>
+$ `sudo apt update`</br>
+$ `sudo apt install apache2`</br>
+$ `sudo systemctl stop apache2.service` </br>
+$ `sudo systemctl start apache2.service` </br>
+$ `sudo systemctl enable apache2.service` </br>
+$ `sudo apt install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-mbstring php7.2-xmlrpc php7.2-soap php7.2-gd php7.2-xml php7.2-intl php7.2-mysql php7.2-cli php7.2-zip php7.2-curl`</br>
+Copy the HTML and PHP file in /var/www/html/ and type the localhost/index1.php in browser
