@@ -28,3 +28,65 @@ define \<declaration\></br>
 body</br>
 \<statement\></br>
 fnish program</br>
+## FUNCTION DEFINITION
+function \<function name\>(\<datatype\> \<variable\> in, \<datatype\> \<variable\> out) is</br>
+\<declaration\></br>
+body</br>
+\<statement\>finsh functione;</br>
+## IF ELSE STATEMENT
+if (\<condition\>) then</br>
+\<statement\></br>
+else</br>
+\<statement\></br>
+finsh if</br>
+## LOOP
+for (counter = counter + 1e counter \<= num_loops)<\br>
+\<statement\><\br>
+fnish for<\br>
+## FUNCTION CALL
+\<function name\>(\<parameter to pass\>,\<return value\>)
+## DATA TYPE
+• int – Integer</br>
+• bool – Boolean</br>
+• str – String</br>
+• foat – Float</br>
+## FUNCTION
+• putstr("Enter 1st Integer:")</br>
+• getint(variable)</br>
+• putint(result)</br>
+• getstr(“enter string”)</br>
+• getbool(testbool)</br>
+• putbool(testbool)</br>
+• getfoat(testfoat)</br>
+• putfoat(testfoat)</br>
+## GRAMMAR
+\<program\> ::= \<program_header\> \<program_body\></br>
+\<program_header\> ::= ‘ the’ 'program' \<identifier\> 'is'</br>
+\<program_body\> ::= ‘ define’( \<declaration\> ';' )* 'body' ( \<statement\> ';' )* 'finish' 'program' </br>
+\<declaration\> ::= [ 'global' ] \<procedure_declaration\> [ 'global' ] \<variable_declaration\></br>
+\<variable_declaration\> ::=\<type_mark\> \<identifier\> [ '[' \<array_size\> ']' ] </br>
+\<type_mark\> ::= 'int’' | 'float' | 'bool' | 'str' </br>
+\<procedure_declaration\> ::= \<procedure_header\> \<procedure_body\> </br>
+\<procedure_header\> ::='function' \<identifier\> '(' [ \<parameter_list\> ] ')' ’is’</br>
+\<procedure_body\> ::= ( \<declaration\> ';' )* ‘ body' ( \<statement ';' )* 'finish’ 'function' </br>
+\<parameter_list\> ::= \<parameter\> ',' \<parameter_list\> |\<parameter\> </br>
+\<parameter\> ::= \<variable_declaration\> ( 'in' | 'out' )</br>
+\<statement\> ::= \<assignment_statement\> | \<if_statement\> | \<loop_statement\> | \<return_statement\> |
+\<procedure_call\> </br>
+\<assignment_statement\> ::= \<destination\> '=' \<expression\></br>
+\<if_statement\> ::= 'if' '(' \<expression\> ')' 'then' ( \<statement\> ';' )+ [ 'else' ( \<statement\> ';' )+ ]
+'finish' 'if'</br>
+\<loop_statement\> ::= 'for' '(' \<assignment_statement\> ';' \<expression\> ')' ( \<statement\> ';' )* 'finish' 'for' </br>
+\<procedure_call\> ::= \<identifier\> '(' [ \<argument_list\> ] ')'</br>
+\<argument_list\> ::= \<expression\> ',' \<argument_list\> |\<expression\> </br>
+\<destination\> ::= \<identifier\> [ '[' \<expression\> ']' ] </br>
+\<expression\> ::= \<expression\> '&' \<arith_op\> | \<expression\> '|' \<arith_op\> | [ 'not' ] \<arith_op\> </br>
+\<arith_op\> ::= \<arith_op\> '+' \<relation\> | \<arith_op\> '-' \<relation\> |\<relation\> </br>
+\<relation\> ::= \<relation\> '\<' \<term\> | \<relation\> '\>' \<term\> | \<relation\> '\>=' \<term\> | \<relation\> '\<=' \<term\> |\<relation\> '==' \<term\> |\<relation\> '!=' \<term\> |\<term\> </br>
+\<term\> ::= \<term\> '*' \<factor\> | \<term\> '/' \<factor\> | \<factor\> </br>
+\<factor\> ::= '(' \<expression\> ')' | [ '-' ] \<name\> | [ '-' ] \<number\> | \<string\> | 'true' | 'false' |</br>
+\<name\> ::= \<identifier\> [ '[' \<expression\> ']' ]</br>
+\<identifier\> ::= [a-zA-Z][a-zA-Z0-9_]* </br>
+\<number\> ::= [0-9][0-9_]*[.[0-9_]*]? </br>
+\<string\> ::= "[a-zA-Z0-9 _,;:.']*" </br>
+## GUI 
