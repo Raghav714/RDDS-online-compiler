@@ -106,4 +106,3 @@ Edit the Path of the file `compiler.py` in index1.php </br>
 if the program doesnot work then run $ `sudo chmod 777 *` in /var/www/html/ </br>
 if you wish to make RDDS as a command then open the bashrc file(sudo gedit ~/.bashrc) and write the command `alias RDDS ='python3 /home/raghav/Downloads/compiler/2compiler/compiler.py -o OUT'` in this you need to replace the path of compiler.py file.</br>
 use the command `RDDS rdds_test/simple_add.src` and `./a.out` to see the output
-`
