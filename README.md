@@ -23,8 +23,8 @@ token to expect.</br>
 • To ensure that pointers are 32-bit and may be cast to integer without issue, the `gcc` compiler fag `-m32` is used.</br>
 • Future improvements could be made to "push back" register allocation to the frst register (`R[0]`) at the end of each scope.</br>
 ## LANGUAGE SYNTAXPROGRAM BODY
-the program <name> is</br>
-define <declaration></br>
+the program \<name\> is</br>
+define \<declaration\></br>
 body</br>
-<statement></br>
+\<statement\></br>
 fnish program</br>
