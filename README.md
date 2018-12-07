@@ -90,3 +90,13 @@ fnish for<\br>
 \<number\> ::= [0-9][0-9_]*[.[0-9_]*]? </br>
 \<string\> ::= "[a-zA-Z0-9 _,;:.']*" </br>
 ## GUI 
+![compiler1](https://user-images.githubusercontent.com/29707542/49634701-85c6d580-fa23-11e8-852b-89079215d67c.png)
+![compiler2](https://user-images.githubusercontent.com/29707542/49634708-8b242000-fa23-11e8-9363-0aef06a62514.png)
+
+### STEPS to run the program
+ `sudo apt update`</br>
+`sudo apt install apache2`</br>
+`sudo systemctl stop apache2.service` </br>
+`sudo systemctl start apache2.service` </br>
+`sudo systemctl enable apache2.service` </br>
+`sudo apt install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-mbstring php7.2-xmlrpc php7.2-soap php7.2-gd php7.2-xml php7.2-intl php7.2-mysql php7.2-cli php7.2-zip php7.2-curl`</br>
